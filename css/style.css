@@ -1,9 +1,40 @@
 body {
-font-style: italic;
-font-family: Arial, sans-serif;
-background-color: #0de130;
-color: #333;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+margin: 0;
 }
-h1 {
-color: #2c502f;
+header {
+width: 100%;
+background-color: #b9b929;
+padding: 10px;
+text-align: center;
+}
+header nav ul {
+list-style-type: none;
+padding: 0;
+}
+header nav ul li {
+display: inline;
+margin-right: 20px;
+}
+footer {
+width: 100%;
+background-color: #3cb929;
+color: white;
+text-align: center;
+padding: 10px;
+position: absolute;
+bottom: 0;
+}
+@media screen and (max-width: 768px) {
+body {
+flex-direction: column;
+padding: 10px;
+}
+header nav ul li {
+display: block;
+margin-right: 0;
+}
 }
